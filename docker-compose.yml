@@ -1,0 +1,45 @@
+# Версия Docker API
+version: '3.3'
+# Сервисы для запуска
+services:
+
+  # сервис - postgres
+  postgres-db:
+    # Образ на основе которого он будет запускаться
+    image: postgres:latest
+    container_name: postgres
+    # Пробросить порт 5432 хоста в порт 5432 контейнера
+    ports:
+      - 5432:5432
+    # Переменные окружения
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=pass
+
+
+  # сервис mysql
+  mysql-db:
+    # Образ на основе которого он будет запускаться
+    image: mysql:latest
+    container_name: mysql
+    # Пробросить порт 3306 хоста в порт 3306 контейнера
+    ports:
+      - 3306:3306
+    # Переменные окружения
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=app
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=pass
+
+  # сервис - simulator
+  node-gate-simulator:
+    # <build: .> - означает, что мы собираем образ из Dockerfile, находящемся в текущем каталоге
+    build: gate-simulator
+    container_name: gate-simulator
+    # Образ на основе которого он будет запускаться
+    image: node-gate-simulator:1.0
+    # Пробросить порт 9999 хоста в порт 9999 контейнера
+    ports:
+      - 9999:9999
