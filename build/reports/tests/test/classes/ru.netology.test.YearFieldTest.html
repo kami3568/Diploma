@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">7.349s</div>
+<div class="counter">3.151s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,31 +81,31 @@
 <tr>
 <td class="success">Notification if 'Year equals more than five years from now'</td>
 <td class="success">badRandomDigitInYearField()</td>
-<td class="success">0.723s</td>
+<td class="success">0.638s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Notification if 'Double Zero'</td>
 <td class="success">doubleZeroDigitInYearField()</td>
-<td class="success">0.689s</td>
+<td class="success">0.631s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Empty field notification</td>
 <td class="success">emptyYearField()</td>
-<td class="success">0.658s</td>
+<td class="success">0.610s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Past year and current month</td>
 <td class="success">pastDateInYearFieldAndCurrentDateInMonthField()</td>
-<td class="success">0.730s</td>
+<td class="success">0.640s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Notification if 'Zero'</td>
 <td class="success">zeroDigitInYearField()</td>
-<td class="success">4.549s</td>
+<td class="success">0.632s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -113,7 +113,7 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>авг. 05, 2023 10:12:33 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+<pre>авг. 12, 2023 11:11:41 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionStarted(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:zeroDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Zero'', legacyReportingName = 'zeroDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'zeroDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST])
 java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDescription(java.lang.ClassLoader, java.lang.reflect.Method, io.qameta.allure.model.ExecutableItem)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$startTestCase$7(AllureJunitPlatform.java:412)
@@ -191,33 +191,10 @@ java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDes
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Mechanic\IdeaProjects\Diploma3\build\downloads\1691262753146_28860_1
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Mechanic\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 32946
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1691262756.092][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
-[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-авг. 05, 2023 10:12:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 115
-авг. 05, 2023 10:12:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=115.0.5790.170 Platform=WINDOWS
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.12.3
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.8.1 build revision: 8ebccac989
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (ffb5740480e87b87d9f4979827452027)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on WINDOWS (ffb5740480e87b87d9f4979827452027),proxy=null,downloadsFolder=C:\Users\Mechanic\IdeaProjects\Diploma3\build\downloads\1691262753146_28860_1] in 1 [size=1]
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 275d4e79-3e2d-4712-b20c-63318d657dc5 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid 275d4e79-3e2d-4712-b20c-63318d657dc5 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 275d4e79-3e2d-4712-b20c-63318d657dc5 not found
-авг. 05, 2023 10:12:37 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid dc417ec2-b10a-4fe5-a94d-d7135e309dcb not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid dc417ec2-b10a-4fe5-a94d-d7135e309dcb not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid dc417ec2-b10a-4fe5-a94d-d7135e309dcb not found
+авг. 12, 2023 11:11:42 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:zeroDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Zero'', legacyReportingName = 'zeroDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'zeroDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -295,7 +272,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-авг. 05, 2023 10:12:37 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+авг. 12, 2023 11:11:42 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionStarted(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:pastDateInYearFieldAndCurrentDateInMonthField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Past year and current month', legacyReportingName = 'pastDateInYearFieldAndCurrentDateInMonthField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'pastDateInYearFieldAndCurrentDateInMonthField', methodParameterTypes = ''], tags = [], type = TEST])
 java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDescription(java.lang.ClassLoader, java.lang.reflect.Method, io.qameta.allure.model.ExecutableItem)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$startTestCase$7(AllureJunitPlatform.java:412)
@@ -373,10 +350,10 @@ java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDes
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2378b92f-9327-494e-a57d-8c0fc1154d58 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid 2378b92f-9327-494e-a57d-8c0fc1154d58 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 2378b92f-9327-494e-a57d-8c0fc1154d58 not found
-авг. 05, 2023 10:12:38 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 7845f213-eb84-47ea-bbd7-794d5ac11a8d not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid 7845f213-eb84-47ea-bbd7-794d5ac11a8d not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 7845f213-eb84-47ea-bbd7-794d5ac11a8d not found
+авг. 12, 2023 11:11:42 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:pastDateInYearFieldAndCurrentDateInMonthField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Past year and current month', legacyReportingName = 'pastDateInYearFieldAndCurrentDateInMonthField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'pastDateInYearFieldAndCurrentDateInMonthField', methodParameterTypes = ''], tags = [], type = TEST], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -454,7 +431,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-авг. 05, 2023 10:12:38 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+авг. 12, 2023 11:11:42 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionStarted(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:badRandomDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Year equals more than five years from now'', legacyReportingName = 'badRandomDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'badRandomDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST])
 java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDescription(java.lang.ClassLoader, java.lang.reflect.Method, io.qameta.allure.model.ExecutableItem)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$startTestCase$7(AllureJunitPlatform.java:412)
@@ -532,10 +509,10 @@ java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDes
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid b49a5de9-3abb-4ba0-8d07-5c509fa277e2 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid b49a5de9-3abb-4ba0-8d07-5c509fa277e2 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid b49a5de9-3abb-4ba0-8d07-5c509fa277e2 not found
-авг. 05, 2023 10:12:39 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid b15331f8-c76e-48e7-b948-41a97e4b8665 not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid b15331f8-c76e-48e7-b948-41a97e4b8665 not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid b15331f8-c76e-48e7-b948-41a97e4b8665 not found
+авг. 12, 2023 11:11:43 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:badRandomDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Year equals more than five years from now'', legacyReportingName = 'badRandomDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'badRandomDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -613,7 +590,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-авг. 05, 2023 10:12:39 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+авг. 12, 2023 11:11:43 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionStarted(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:doubleZeroDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Double Zero'', legacyReportingName = 'doubleZeroDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'doubleZeroDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST])
 java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDescription(java.lang.ClassLoader, java.lang.reflect.Method, io.qameta.allure.model.ExecutableItem)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$startTestCase$7(AllureJunitPlatform.java:412)
@@ -691,10 +668,10 @@ java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDes
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 715eac25-9f26-49a6-9d5f-27f8cbbb0f45 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid 715eac25-9f26-49a6-9d5f-27f8cbbb0f45 not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 715eac25-9f26-49a6-9d5f-27f8cbbb0f45 not found
-авг. 05, 2023 10:12:39 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid c09c5894-c4b0-486c-9b05-0ecb12cbe0bd not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid c09c5894-c4b0-486c-9b05-0ecb12cbe0bd not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid c09c5894-c4b0-486c-9b05-0ecb12cbe0bd not found
+авг. 12, 2023 11:11:44 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:doubleZeroDigitInYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Notification if 'Double Zero'', legacyReportingName = 'doubleZeroDigitInYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'doubleZeroDigitInYearField', methodParameterTypes = ''], tags = [], type = TEST], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -772,7 +749,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-авг. 05, 2023 10:12:39 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+авг. 12, 2023 11:11:44 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionStarted(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:emptyYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Empty field notification', legacyReportingName = 'emptyYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'emptyYearField', methodParameterTypes = ''], tags = [], type = TEST])
 java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDescription(java.lang.ClassLoader, java.lang.reflect.Method, io.qameta.allure.model.ExecutableItem)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$startTestCase$7(AllureJunitPlatform.java:412)
@@ -850,10 +827,10 @@ java.lang.NoSuchMethodError: 'void io.qameta.allure.util.ResultsUtils.processDes
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 640aead9-2805-4f91-943b-d2179100908f not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid 640aead9-2805-4f91-943b-d2179100908f not found
-[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 640aead9-2805-4f91-943b-d2179100908f not found
-авг. 05, 2023 10:12:40 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid bd3112cc-506d-481c-a0e5-c71bce7ec7e8 not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not stop test case: test case with uuid bd3112cc-506d-481c-a0e5-c71bce7ec7e8 not found
+[Test worker] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid bd3112cc-506d-481c-a0e5-c71bce7ec7e8 not found
+авг. 12, 2023 11:11:44 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest]/[method:emptyYearField()], parentId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], displayName = 'Empty field notification', legacyReportingName = 'emptyYearField()', source = MethodSource [className = 'ru.netology.test.YearFieldTest', methodName = 'emptyYearField', methodParameterTypes = ''], tags = [], type = TEST], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -931,7 +908,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-авг. 05, 2023 10:12:40 PM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
+авг. 12, 2023 11:11:44 AM org.junit.platform.launcher.core.CompositeTestExecutionListener lambda$notifyEach$19
 WARNING: TestExecutionListener [io.qameta.allure.junitplatform.AllureJunitPlatform] threw exception for method: executionFinished(TestIdentifier [uniqueId = [engine:junit-jupiter]/[class:ru.netology.test.YearFieldTest], parentId = [engine:junit-jupiter], displayName = ''Year' field testing', legacyReportingName = 'ru.netology.test.YearFieldTest', source = ClassSource [className = 'ru.netology.test.YearFieldTest', filePosition = null], tags = [], type = CONTAINER], TestExecutionResult [status = SUCCESSFUL, throwable = null])
 java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qameta.allure.model.TestResultContainer.setChildren(java.util.Collection)'
 	at io.qameta.allure.junitplatform.AllureJunitPlatform.lambda$stopTestContainer$3(AllureJunitPlatform.java:301)
@@ -1010,7 +987,7 @@ java.lang.NoSuchMethodError: 'io.qameta.allure.model.TestResultContainer io.qame
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 5 авг. 2023 г., 22:12:41</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 12 авг. 2023 г., 11:11:45</p>
 </div>
 </div>
 </body>
