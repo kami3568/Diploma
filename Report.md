@@ -11,4 +11,5 @@ Issue в количесвте 5 штук:
 https://github.com/kami3568/Diploma/issues
 
 Gradle Test Summary: 
-http://localhost:63342/Diploma3/build/reports/tests/test/packages/ru.netology.test.html?_ijt=9f467kc1ur97m03cc23tr9cbb1&_ij_reload=RELOAD_ON_SAVE
+
+![Screenshot_8](https://github.com/kami3568/Diploma/assets/107144564/60ef8ad1-00fc-4c7a-91db-6d61d6d1f803)
